@@ -17,6 +17,7 @@ var clickListener = function() {
         }
         if (picture.style.visibility === 'hidden') {
             picture.style.visibility = 'visible';
+            picture.style.display = 'block';
         } else {
             picture.style.visibility = 'hidden';
         }
