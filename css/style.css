@@ -1,0 +1,53 @@
+body{
+    min-height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    margin:3%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content{
+    margin: 0;
+    min-width: 40%;
+    max-width: 60%;
+    font-size:2.5em;
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+}
+
+a, #image-loader{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+a:hover, #image-loader:hover{
+    /*font-style: normal;*/
+    text-decoration-color: hotpink;
+}
+
+a:visited{
+    color: black;
+    text-decoration-color: blue;
+}
+
+#image-loader:hover{
+    cursor: pointer;
+}
+
+#picture{
+    visibility: hidden;
+    max-height: 300px; 
+    max-width:  300px;
+}
+
+footer{
+    margin: 3%;
+    text-align: center;
+}
