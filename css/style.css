@@ -1,11 +1,12 @@
 body{
-    min-height: 95%;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .content{
+    min-height: 80%;
     margin:3%;
     flex: 1;
     display: flex;
@@ -15,7 +16,7 @@ body{
 .text-content{
     margin: 0;
     min-width: 40%;
-    max-width: 60%;
+    max-width: 85%;
     font-size:2.5em;
     font-family: 'Muli', sans-serif;
     font-style: italic;
@@ -43,11 +44,31 @@ a:visited{
 
 #picture{
     visibility: hidden;
-    max-height: 300px; 
-    max-width:  300px;
+    max-height: 500px; 
+    max-width:  500px;
 }
 
 footer{
     margin: 3%;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    /*body{
+        background-color: black;
+        color: white;
+    }*/
+    .content{
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .image-container{
+        margin-top: 10%;
+    }
+
+    .text-content{
+        font-size: 1.5em;
+        max-width: 100%;
+    }
 }

@@ -5,7 +5,7 @@ window.onload = function(){
     var showPictureText = "If you're curious to see what I look like, click <span id='image-loader'>here</span>.";
     textWrapper.innerHTML = showPictureText;
     clickListener();
-
+    randomizeBackground();
 };
 
 var clickListener = function() { 
@@ -21,4 +21,15 @@ var clickListener = function() {
             picture.style.visibility = 'hidden';
         }
     });
+};
+
+/**
+ * switches background and text color 
+ */
+var randomizeBackground = function() {
+    var changeBgToBlack = Math.random() >= 0.5;
+    if (changeBgToBlack){
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
 };
