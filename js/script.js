@@ -31,5 +31,7 @@ var randomizeBackground = function() {
     if (changeBgToBlack){
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
+        document.getElementById("github-link-img").src="resources/github_w.svg";
+        document.getElementById("insta-link-img").src="resources/instagram_w.svg";
     }
 };
