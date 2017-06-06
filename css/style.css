@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #222;
 }
 
 .content{
@@ -25,12 +26,12 @@ body{
 a, #image-loader{
     color: red;
     text-decoration: underline;
-    text-decoration-color: aqua;
+    text-decoration-color: mediumspringgreen;
 }
 
 a:hover, #image-loader:hover{
-    /*font-style: normal;*/
-    text-decoration-color: hotpink;
+    /*font-style: normal;
+    text-decoration-color: hotpink;*/
 }
 
 a:visited{
@@ -74,5 +75,9 @@ footer{
     #picture{
         max-height: 250px;
         max-width: 250px;
+    }
+
+    footer{
+        text-align: right;
     }
 }
