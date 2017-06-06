@@ -6,6 +6,10 @@ body{
     color: #222;
 }
 
+::selection{
+    background: blue;
+}
+
 .content{
     min-height: 80%;
     margin:3% 3% 0 3%;
